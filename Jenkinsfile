@@ -2,7 +2,7 @@ pipeline {
     agent { label 'ci-agent' }
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        IMAGE_NAME = "yourdockerhubuser/prt-cicd-demo"
+        IMAGE_NAME = "dilip03/prt-cicd-demo"
     }
     stages {
         stage('Checkout') {
